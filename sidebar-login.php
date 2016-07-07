@@ -77,7 +77,7 @@ class Sidebar_Login {
 			'ajax_url'         => $this->ajax_url(),
 			'force_ssl_admin'  => force_ssl_admin() ? 1 : 0,
 			'is_ssl'           => is_ssl() ? 1 : 0,
-			'i18n_username_required' => __( 'Please enter your username', 'sidebar-login' ),
+			'i18n_username_required' => __( 'Please enter your username or email', 'sidebar-login' ),
 			'i18n_password_required' => __( 'Please enter your password', 'sidebar-login' ),
 			'error_class'      => apply_filters( 'sidebar_login_widget_error_class', 'sidebar_login_error' )
 		);
@@ -176,7 +176,7 @@ class Sidebar_Login {
 					break;
 				}
 			} else {
-				$result['error'] = __( 'Please enter your username and password to login.', 'sidebar-login' );
+				$result['error'] = __( 'Please enter your username or email and password to login.', 'sidebar-login' );
 			}
 		}
 
