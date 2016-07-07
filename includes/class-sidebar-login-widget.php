@@ -296,7 +296,7 @@ class Sidebar_Login_Widget extends WP_Widget {
 			$login_form_args = apply_filters( 'sidebar_login_widget_form_args', array(
 		        'echo' 				=> false,
 		        'redirect' 			=> esc_url( apply_filters( 'sidebar_login_widget_login_redirect', $redirect ) ),
-		        'label_username' 	=> __( 'Username', 'sidebar-login' ),
+		        'label_username' 	=> __( 'Username or Email', 'sidebar-login' ),
 		        'label_password' 	=> __( 'Password', 'sidebar-login' ),
 		        'label_remember' 	=> __( 'Remember Me', 'sidebar-login' ),
 		        'label_log_in' 		=> __( 'Login &rarr;', 'sidebar-login' ),
